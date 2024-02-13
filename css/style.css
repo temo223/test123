@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    background-color: #ffffff;
+    z-index: 999; /* ჰედერი  რომ სქროლვის დროს კონტენტის დაბლა არ მოექცეს */
+}
+
+.header img {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    width: 100px; 
+    height: auto; 
+    z-index: 999;
+}
+
+.navigation {
+    position: absolute;
+    top: 15px;
+    right: 140px;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #707070;
+}
+
+/* body styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0; 
+}
+
+/* content sstyles */
+.content {
+    padding-top: 120px; 
+    padding-bottom: 120px; 
+    max-width: 100%; 
+    overflow-x: auto; 
+    white-space: nowrap;
+    position: relative; 
+}
+
+/* დიდი სურათის სტილები */
+.content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* პოპულარული სტატიების სტილები */
+.popular-articles {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.popular-articles h2 {
+    /* UI Properties */
+    font: normal normal 100 40px/53px Archy EDT;
+    letter-spacing: 0.4px;
+    color: #707070;
+    opacity: 1;
+    margin-bottom: 30px;
+
+}
+
+
+
+
+.article {
+    margin-bottom: 20px; 
+    box-sizing: border-box; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 10px; 
+   float: left;
+ margin-right: 95.5px; 
+ box-shadow: 0px 3px 6px #00000029;
+
+
+}
+
+
+
+.article-image {
+    top: 1081px;
+    left: 140px;
+    width: 483px;
+    height: 282px;
+    max-width: 100%;
+    height: auto;
+}
+
+.article h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    line-height: 40px;
+    font-family: Archy EDT;
+    letter-spacing: 0.3px;
+    color: #707070;
+    opacity: 1;
+
+}
+
+.article p {
+    /* font stylees */
+    font: normal normal normal 18px/24px Zapf Dingbats;
+    letter-spacing: 0px;
+    color: #707070;
+    /* Other Styles */
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* footer styles */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* თანაბრად რომ მოხდეს დაშორება */
+    padding: 0 20px; /*მეტი სივრცისთვის დავამატე ფადინგი */
+}
+
+.footer-logo {
+    width: 80px; 
+    height: auto; 
+}
